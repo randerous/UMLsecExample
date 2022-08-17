@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:UMLsec="http://www.umlsec.de/profiles/UMLsec" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_AH1UkBohEe2YweHuT4XpSg" name="testUMLsec">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_ALOm0BohEe2YweHuT4XpSg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_CP8QkBohEe2YweHuT4XpSg" name="Activity2" node="_gKG-QBohEe2YweHuT4XpSg _mPgZwBoiEe2YweHuT4XpSg _qddn8BoiEe2YweHuT4XpSg _xdzeMBoiEe2YweHuT4XpSg _0FLJEBoiEe2YweHuT4XpSg _22DVQBoiEe2YweHuT4XpSg _5WLvsBoiEe2YweHuT4XpSg _gMWIABojEe2YweHuT4XpSg _noyEYBojEe2YweHuT4XpSg _pyHIYBojEe2YweHuT4XpSg _KE694BojEe2YweHuT4XpSg _SDL08BojEe2YweHuT4XpSg">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ueWDcBoiEe2YweHuT4XpSg" target="_mPgZwBoiEe2YweHuT4XpSg" source="_gKG-QBohEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_vG0_wBoiEe2YweHuT4XpSg" target="_qddn8BoiEe2YweHuT4XpSg" source="_mPgZwBoiEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_SDdhwBojEe2YweHuT4XpSg" target="_SDL08BojEe2YweHuT4XpSg" source="_qddn8BoiEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_W0x7sBojEe2YweHuT4XpSg" target="_5WLvsBoiEe2YweHuT4XpSg" source="_SDL08BojEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_byXQABojEe2YweHuT4XpSg" target="_xdzeMBoiEe2YweHuT4XpSg" source="_SDL08BojEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_iyIegBojEe2YweHuT4XpSg" target="_gMWIABojEe2YweHuT4XpSg" source="_xdzeMBoiEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_jVRn0BojEe2YweHuT4XpSg" target="_22DVQBoiEe2YweHuT4XpSg" source="_gMWIABojEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_kIXRoBojEe2YweHuT4XpSg" target="_0FLJEBoiEe2YweHuT4XpSg" source="_gMWIABojEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_sLwgUBojEe2YweHuT4XpSg" target="_noyEYBojEe2YweHuT4XpSg" source="_22DVQBoiEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_tH6mkBojEe2YweHuT4XpSg" target="_noyEYBojEe2YweHuT4XpSg" source="_0FLJEBoiEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_w8tt4BojEe2YweHuT4XpSg" target="_pyHIYBojEe2YweHuT4XpSg" source="_noyEYBojEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_xkPn8BojEe2YweHuT4XpSg" target="_pyHIYBojEe2YweHuT4XpSg" source="_5WLvsBoiEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_yelwUBojEe2YweHuT4XpSg" target="_KE694BojEe2YweHuT4XpSg" source="_pyHIYBojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_gKG-QBohEe2YweHuT4XpSg" outgoing="_ueWDcBoiEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_mPgZwBoiEe2YweHuT4XpSg" name="request goods" incoming="_ueWDcBoiEe2YweHuT4XpSg" outgoing="_vG0_wBoiEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_qddn8BoiEe2YweHuT4XpSg" name="pay" incoming="_vG0_wBoiEe2YweHuT4XpSg" outgoing="_SDdhwBojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_xdzeMBoiEe2YweHuT4XpSg" name="wait to date" incoming="_byXQABojEe2YweHuT4XpSg" outgoing="_iyIegBojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_0FLJEBoiEe2YweHuT4XpSg" name="return pay" incoming="_kIXRoBojEe2YweHuT4XpSg" outgoing="_tH6mkBojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_22DVQBoiEe2YweHuT4XpSg" name="receive" incoming="_jVRn0BojEe2YweHuT4XpSg" outgoing="_sLwgUBojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_5WLvsBoiEe2YweHuT4XpSg" name="pay" incoming="_W0x7sBojEe2YweHuT4XpSg" outgoing="_xkPn8BojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_KE694BojEe2YweHuT4XpSg" incoming="_yelwUBojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:ForkNode" xmi:id="_SDL08BojEe2YweHuT4XpSg" incoming="_SDdhwBojEe2YweHuT4XpSg" outgoing="_W0x7sBojEe2YweHuT4XpSg _byXQABojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_gMWIABojEe2YweHuT4XpSg" name=" " incoming="_iyIegBojEe2YweHuT4XpSg" outgoing="_jVRn0BojEe2YweHuT4XpSg _kIXRoBojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_noyEYBojEe2YweHuT4XpSg" name="" incoming="_sLwgUBojEe2YweHuT4XpSg _tH6mkBojEe2YweHuT4XpSg" outgoing="_w8tt4BojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:JoinNode" xmi:id="_pyHIYBojEe2YweHuT4XpSg" name="" incoming="_w8tt4BojEe2YweHuT4XpSg _xkPn8BojEe2YweHuT4XpSg" outgoing="_yelwUBojEe2YweHuT4XpSg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_pAw14BohEe2YweHuT4XpSg" name="Package3">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_J_4gQBr8Ee2Kuenq1dEdWw" name="Activity1" node="_M3rz0Br8Ee2Kuenq1dEdWw _SJZlEBr8Ee2Kuenq1dEdWw _UsRKcBr8Ee2Kuenq1dEdWw _WrxkEBr8Ee2Kuenq1dEdWw _ZfTboBr8Ee2Kuenq1dEdWw _eUlIgBr8Ee2Kuenq1dEdWw">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_g23fEBr8Ee2Kuenq1dEdWw" target="_SJZlEBr8Ee2Kuenq1dEdWw" source="_M3rz0Br8Ee2Kuenq1dEdWw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_hb77ABr8Ee2Kuenq1dEdWw" target="_UsRKcBr8Ee2Kuenq1dEdWw" source="_SJZlEBr8Ee2Kuenq1dEdWw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_ic0wQBr8Ee2Kuenq1dEdWw" name="[otherwise]" target="_WrxkEBr8Ee2Kuenq1dEdWw" source="_UsRKcBr8Ee2Kuenq1dEdWw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_jiohwBr8Ee2Kuenq1dEdWw" name="[credit > 10.000]" target="_ZfTboBr8Ee2Kuenq1dEdWw" source="_UsRKcBr8Ee2Kuenq1dEdWw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_lPY-gBr8Ee2Kuenq1dEdWw" target="_eUlIgBr8Ee2Kuenq1dEdWw" source="_WrxkEBr8Ee2Kuenq1dEdWw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_p-1wMBr8Ee2Kuenq1dEdWw" target="_WrxkEBr8Ee2Kuenq1dEdWw" source="_ZfTboBr8Ee2Kuenq1dEdWw"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_M3rz0Br8Ee2Kuenq1dEdWw" name="" outgoing="_g23fEBr8Ee2Kuenq1dEdWw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_SJZlEBr8Ee2Kuenq1dEdWw" name="obtain customer details" incoming="_g23fEBr8Ee2Kuenq1dEdWw" outgoing="_hb77ABr8Ee2Kuenq1dEdWw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_UsRKcBr8Ee2Kuenq1dEdWw" name="set up credit" incoming="_hb77ABr8Ee2Kuenq1dEdWw" outgoing="_ic0wQBr8Ee2Kuenq1dEdWw _jiohwBr8Ee2Kuenq1dEdWw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_WrxkEBr8Ee2Kuenq1dEdWw" name="transfer money" incoming="_ic0wQBr8Ee2Kuenq1dEdWw _p-1wMBr8Ee2Kuenq1dEdWw" outgoing="_lPY-gBr8Ee2Kuenq1dEdWw"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_ZfTboBr8Ee2Kuenq1dEdWw" name="authoriize credit" incoming="_jiohwBr8Ee2Kuenq1dEdWw" outgoing="_p-1wMBr8Ee2Kuenq1dEdWw"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_eUlIgBr8Ee2Kuenq1dEdWw" name="" incoming="_lPY-gBr8Ee2Kuenq1dEdWw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_8Hz9MBr7Ee2Kuenq1dEdWw" name="Granting a credit" URI=""/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ZZbAoBr9Ee2Kuenq1dEdWw" name="remote access"/>
+    <packagedElement xmi:type="uml:Node" xmi:id="_qM7aEBr9Ee2Kuenq1dEdWw" name="client machine">
+      <deployment xmi:type="uml:Deployment" xmi:id="_taMlEB4jEe2-ccdznUHDMw" client="_qM7aEBr9Ee2Kuenq1dEdWw" supplier="_hxFM4B4jEe2-ccdznUHDMw" deployedArtifact="_hxFM4B4jEe2-ccdznUHDMw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Node" xmi:id="_vsfaEBr9Ee2Kuenq1dEdWw" name="sever machine">
+      <deployment xmi:type="uml:Deployment" xmi:id="_sXlRgB4jEe2-ccdznUHDMw" client="_vsfaEBr9Ee2Kuenq1dEdWw" supplier="_iUT1wB4jEe2-ccdznUHDMw" deployedArtifact="_iUT1wB4jEe2-ccdznUHDMw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Y9KtABr-Ee2Kuenq1dEdWw" client="_iUT1wB4jEe2-ccdznUHDMw" supplier="_hxFM4B4jEe2-ccdznUHDMw"/>
+    <packagedElement xmi:type="uml:CommunicationPath" xmi:id="_2jk2UB4hEe2-ccdznUHDMw" memberEnd="_2jldYh4hEe2-ccdznUHDMw _2jmEcB4hEe2-ccdznUHDMw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2jldYB4hEe2-ccdznUHDMw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2jldYR4hEe2-ccdznUHDMw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2jldYh4hEe2-ccdznUHDMw" name="client machine" type="_qM7aEBr9Ee2Kuenq1dEdWw" association="_2jk2UB4hEe2-ccdznUHDMw"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_2jmEcB4hEe2-ccdznUHDMw" name="sever machine" type="_vsfaEBr9Ee2Kuenq1dEdWw" association="_2jk2UB4hEe2-ccdznUHDMw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_hxFM4B4jEe2-ccdznUHDMw" name="Artifact1"/>
+    <packagedElement xmi:type="uml:Artifact" xmi:id="_iUT1wB4jEe2-ccdznUHDMw" name="Artifact2"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_7URCcBohEe2YweHuT4XpSg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7URCcRohEe2YweHuT4XpSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.umlsec.de/profiles/UMLsec#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="platform:/plugin/carisma.profile.umlsec/profile/UMLsec.profile.uml#_kGQWQDnkEeCyb9nmG-9Lpw"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLsec:rbac xmi:id="_-ZBK0Br7Ee2Kuenq1dEdWw" protectedactions="_ZfTboBr8Ee2Kuenq1dEdWw" base_Package="_8Hz9MBr7Ee2Kuenq1dEdWw">
+    <role>supervisor, credit approver</role>
+    <right>credit approver, authorize credit</right>
+  </UMLsec:rbac>
+  <UMLsec:secrecy xmi:id="_bQ8tgBr-Ee2Kuenq1dEdWw" base_Dependency="_Y9KtABr-Ee2Kuenq1dEdWw"/>
+  <UMLsec:securelinks xmi:id="_c2LycB4eEe2-ccdznUHDMw" base_Package="_AH1UkBohEe2YweHuT4XpSg"/>
+  <UMLsec:Internet xmi:id="_-LV48B4hEe2-ccdznUHDMw" base_CommunicationPath="_2jk2UB4hEe2-ccdznUHDMw"/>
+</xmi:XMI>

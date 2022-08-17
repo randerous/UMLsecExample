@@ -1,0 +1,23 @@
+<Analysis>
+  <name>testUMLsec_analysis</name>
+  <modelFile>\testUMLsec\models\no_down_flow\testNoDownFlow.uml</modelFile>
+  <modelType>UML2</modelType>
+  <checks>
+    <Check>
+      <checkID>carisma.check.staticcheck.securelinks</checkID>
+      <enabled>false</enabled>
+      <parameters/>
+    </Check>
+    <Check>
+      <checkID>carisma.check.staticcheck.fairexchange</checkID>
+      <enabled>false</enabled>
+      <parameters/>
+    </Check>
+    <Check>
+      <checkID>carisma.check.staticcheck.nodownflow</checkID>
+      <enabled>true</enabled>
+      <parameters/>
+    </Check>
+  </checks>
+  <selectedEditor></selectedEditor>
+</Analysis>

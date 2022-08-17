@@ -1,0 +1,13 @@
+<Analysis>
+  <name>SecureDependencyUsageAndDependencyBspBuch_analysis</name>
+  <modelFile>\testUMLsec\models\secure_dependency\testSecureDependency1.uml</modelFile>
+  <modelType>UML2</modelType>
+  <checks>
+    <Check>
+      <checkID>carisma.check.staticcheck.securedependency</checkID>
+      <enabled>true</enabled>
+      <parameters/>
+    </Check>
+  </checks>
+  <selectedEditor></selectedEditor>
+</Analysis>

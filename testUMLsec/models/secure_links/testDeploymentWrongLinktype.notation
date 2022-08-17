@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:nattable="http://www.eclipse.org/papyrus/nattable/model" xmlns:nattableaxis="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis" xmlns:nattableaxisprovider="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider" xsi:schemaLocation="http://www.eclipse.org/papyrus/nattable/model/table/nattableaxis http://www.eclipse.org/papyrus/nattable/model#//nattableaxis http://www.eclipse.org/papyrus/nattable/model/table/nattableaxisprovider http://www.eclipse.org/papyrus/nattable/model#//nattableaxisprovider">
+  <ecore:EAnnotation xmi:id="_IM0IcB4jEe2-ccdznUHDMw" source="Internationalization">
+    <details xmi:id="_IM0IcR4jEe2-ccdznUHDMw" key="use" value="true"/>
+    <details xmi:id="_IM0Ich4jEe2-ccdznUHDMw" key="language" value="zh_CN"/>
+  </ecore:EAnnotation>
+  <nattable:Table xmi:id="_RobuUB4jEe2-ccdznUHDMw" name="Generic Tree Table0" currentRowAxisProvider="_RobuUx4jEe2-ccdznUHDMw" currentColumnAxisProvider="_RobuUR4jEe2-ccdznUHDMw" tableKindId="org.eclipse.papyrus.uml.table.genericTree">
+    <eAnnotations xmi:id="_RodjgB4jEe2-ccdznUHDMw" source="http://www.eclipse.org/papyrus/infra/nattable/version">
+      <details xmi:id="_RodjgR4jEe2-ccdznUHDMw" key="version" value="1.3.0"/>
+    </eAnnotations>
+    <context href="testDeploymentWrongLinktype.uml#idModel"/>
+    <owner href="testDeploymentWrongLinktype.uml#idModel"/>
+    <tableConfiguration href="platform:/plugin/org.eclipse.papyrus.uml.nattable/configs/genericTreeTable.nattableconfiguration#PapyrusUMLGenericTreeTable_XMI_ID"/>
+    <columnAxisProvidersHistory xsi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_RobuUR4jEe2-ccdznUHDMw" description="This axis provider provides available columns according to the rows of the table (features of the object displayed on the other axis)" name="UML Feature axis provider">
+      <axis xsi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_RobuUh4jEe2-ccdznUHDMw">
+        <manager href="platform:/plugin/org.eclipse.papyrus.uml.nattable/configs/genericTreeTable.nattableconfiguration#_Wa4BBDzQEei_1txcmoHe_A"/>
+        <element xsi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/name"/>
+      </axis>
+    </columnAxisProvidersHistory>
+    <rowAxisProvidersHistory xsi:type="nattableaxisprovider:MasterObjectAxisProvider" xmi:id="_RobuUx4jEe2-ccdznUHDMw" description="This axis provider manages the rows, according to the wanted hierarchy" name="HierarchicalRowAxisManager" disconnectSlave="true"/>
+  </nattable:Table>
+</xmi:XMI>
