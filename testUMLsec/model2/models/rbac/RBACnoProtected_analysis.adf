@@ -1,0 +1,44 @@
+<Analysis>
+  <name>RBACnoProtected_analysis</name>
+  <modelFile>\UMLsecExample\testUMLsec\model2\models\rbac\RBACnoProtected.uml</modelFile>
+  <modelType>UML2</modelType>
+  <checks>
+    <Check>
+      <checkID>carisma.check.rabac.configuration</checkID>
+      <enabled>true</enabled>
+      <parameters>
+        <OutputFileParameter>
+          <descriptor>
+            <id>carisma.check.rabac.configuration</id>
+            <name>Configuration</name>
+            <description>Location to save input</description>
+            <type>OUTPUTFILE</type>
+            <optional>false</optional>
+            <defaultValue>rabac_configuration.xml</defaultValue>
+          </descriptor>
+          <queryOnDemand>true</queryOnDemand>
+          <value>rabac_configuration.xml</value>
+        </OutputFileParameter>
+      </parameters>
+    </Check>
+    <Check>
+      <checkID>carisma.check.rabac</checkID>
+      <enabled>true</enabled>
+      <parameters>
+        <InputFileParameter>
+          <descriptor>
+            <id>carisma.check.rabac.configuration</id>
+            <name>Configuration</name>
+            <description>Saved input location</description>
+            <type>INPUTFILE</type>
+            <optional>false</optional>
+            <defaultValue>rabac_configuration.xml</defaultValue>
+          </descriptor>
+          <queryOnDemand>true</queryOnDemand>
+          <value>rabac_configuration.xml</value>
+        </InputFileParameter>
+      </parameters>
+    </Check>
+  </checks>
+  <selectedEditor></selectedEditor>
+</Analysis>
