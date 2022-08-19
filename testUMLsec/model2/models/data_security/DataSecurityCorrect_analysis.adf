@@ -1,26 +1,26 @@
 <Analysis>
-  <name>DataSecurityCorrect_analysis</name>
-  <modelFile>\UMLsecExample\testUMLsec\models\secure_dependency\testSecureDependency1.uml</modelFile>
+  <name>no down flow</name>
+  <modelFile>\testUMLsec\models\no_down_flow\testNoDownFlow.uml</modelFile>
   <modelType>UML2</modelType>
   <checks>
-    <Check>
-      <checkID>carisma.check.staticcheck.provable</checkID>
-      <enabled>false</enabled>
-      <parameters/>
-    </Check>
-    <Check>
-      <checkID>carisma.check.staticcheck.nodownflow</checkID>
-      <enabled>false</enabled>
-      <parameters/>
-    </Check>
     <Check>
       <checkID>carisma.check.staticcheck.fairexchange</checkID>
       <enabled>false</enabled>
       <parameters/>
     </Check>
     <Check>
-      <checkID>carisma.check.staticcheck.securedependency</checkID>
+      <checkID>carisma.check.staticcheck.nodownflow</checkID>
       <enabled>true</enabled>
+      <parameters/>
+    </Check>
+    <Check>
+      <checkID>carisma.check.staticcheck.securedependency</checkID>
+      <enabled>false</enabled>
+      <parameters/>
+    </Check>
+    <Check>
+      <checkID>carisma.check.staticcheck.securelinks</checkID>
+      <enabled>false</enabled>
       <parameters/>
     </Check>
   </checks>

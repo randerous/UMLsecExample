@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+<net id="activity_convert" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel.rng">
+</net>
+</pnml>

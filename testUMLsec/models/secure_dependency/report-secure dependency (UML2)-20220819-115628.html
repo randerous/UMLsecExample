@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CARiSMA Report</title>
+</head>
+<body>
+	<p>
+	------------------------------------------------------------------------------------<br/>
+	------------------------------------------------------------------------------------<br/>
+	Running check : UMLsec secure dependency Check<br/>
+	------------------------------------------------------------------------------------<br/>
+	<br/>
+	Processing dependency 'InterfaceRealization1' between 'RootElement::testSecureDependency1::Class2' and 'RootElement::testSecureDependency1::Interface1'<br/>
+	  - not in scope of &lt;&lt;secure dependency&gt;&gt; -&gt; nothing to check!<br/>
+	<br/>
+	Processing dependency 'RootElement::testSecureDependency1::Dep1' between 'RootElement::testSecureDependency1::Class1' and 'RootElement::testSecureDependency1::Interface1'<br/>
+	    &quot;Class2&quot; provides {secrecy} for the operation &quot;Operation1()&quot; for which &quot;Class1&quot; does not!<br/>
+	    Dependency misses stereotype &lt;&lt;secrecy&gt;&gt;!<br/>
+	<br/>
+	------------------------------------------------------------------------------------<br/>
+	The analysis detected 2 errors.<br/>
+	------------------------------------------------------------------------------------<br/>
+	------------------------------------------------------------------------------------<br/>
+	<br/>
+	<br/>
+	ERROR: &quot;Class2&quot; provides {secrecy} for the operation &quot;Operation1()&quot; for which &quot;Class1&quot; does not!<br/>
+	ERROR: Dependency 'Dep1' misses stereotype &lt;&lt;secrecy&gt;&gt;!<br/>
+	</p>
+</body>
+</html>

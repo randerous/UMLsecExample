@@ -8,11 +8,13 @@
       <edge xmi:type="uml:ControlFlow" xmi:id="_ueWDcBoiEe2YweHuT4XpSg" target="_mPgZwBoiEe2YweHuT4XpSg" source="_gKG-QBohEe2YweHuT4XpSg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_vG0_wBoiEe2YweHuT4XpSg" target="_qddn8BoiEe2YweHuT4XpSg" source="_mPgZwBoiEe2YweHuT4XpSg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_SDdhwBojEe2YweHuT4XpSg" target="_SDL08BojEe2YweHuT4XpSg" source="_qddn8BoiEe2YweHuT4XpSg"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_W0x7sBojEe2YweHuT4XpSg" target="_5WLvsBoiEe2YweHuT4XpSg" source="_SDL08BojEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_W0x7sBojEe2YweHuT4XpSg" target="_5WLvsBoiEe2YweHuT4XpSg" source="_SDL08BojEe2YweHuT4XpSg">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_gghX4B9rEe2QUfQXsNCdxQ" value="true"/>
+      </edge>
       <edge xmi:type="uml:ControlFlow" xmi:id="_byXQABojEe2YweHuT4XpSg" target="_xdzeMBoiEe2YweHuT4XpSg" source="_SDL08BojEe2YweHuT4XpSg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_iyIegBojEe2YweHuT4XpSg" target="_gMWIABojEe2YweHuT4XpSg" source="_xdzeMBoiEe2YweHuT4XpSg"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_jVRn0BojEe2YweHuT4XpSg" target="_22DVQBoiEe2YweHuT4XpSg" source="_gMWIABojEe2YweHuT4XpSg"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_kIXRoBojEe2YweHuT4XpSg" target="_0FLJEBoiEe2YweHuT4XpSg" source="_gMWIABojEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_jVRn0BojEe2YweHuT4XpSg" name="delivered" target="_22DVQBoiEe2YweHuT4XpSg" source="_gMWIABojEe2YweHuT4XpSg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_kIXRoBojEe2YweHuT4XpSg" name="undelivered" target="_0FLJEBoiEe2YweHuT4XpSg" source="_gMWIABojEe2YweHuT4XpSg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_sLwgUBojEe2YweHuT4XpSg" target="_noyEYBojEe2YweHuT4XpSg" source="_22DVQBoiEe2YweHuT4XpSg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_tH6mkBojEe2YweHuT4XpSg" target="_noyEYBojEe2YweHuT4XpSg" source="_0FLJEBoiEe2YweHuT4XpSg"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_w8tt4BojEe2YweHuT4XpSg" target="_pyHIYBojEe2YweHuT4XpSg" source="_noyEYBojEe2YweHuT4XpSg"/>
@@ -21,10 +23,10 @@
       <node xmi:type="uml:InitialNode" xmi:id="_gKG-QBohEe2YweHuT4XpSg" outgoing="_ueWDcBoiEe2YweHuT4XpSg"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_mPgZwBoiEe2YweHuT4XpSg" name="request goods" incoming="_ueWDcBoiEe2YweHuT4XpSg" outgoing="_vG0_wBoiEe2YweHuT4XpSg"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_qddn8BoiEe2YweHuT4XpSg" name="pay" incoming="_vG0_wBoiEe2YweHuT4XpSg" outgoing="_SDdhwBojEe2YweHuT4XpSg"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_xdzeMBoiEe2YweHuT4XpSg" name="wait to date" incoming="_byXQABojEe2YweHuT4XpSg" outgoing="_iyIegBojEe2YweHuT4XpSg"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_0FLJEBoiEe2YweHuT4XpSg" name="return pay" incoming="_kIXRoBojEe2YweHuT4XpSg" outgoing="_tH6mkBojEe2YweHuT4XpSg"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_22DVQBoiEe2YweHuT4XpSg" name="receive" incoming="_jVRn0BojEe2YweHuT4XpSg" outgoing="_sLwgUBojEe2YweHuT4XpSg"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_5WLvsBoiEe2YweHuT4XpSg" name="pay" incoming="_W0x7sBojEe2YweHuT4XpSg" outgoing="_xkPn8BojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_xdzeMBoiEe2YweHuT4XpSg" name="wait until dlivery due" incoming="_byXQABojEe2YweHuT4XpSg" outgoing="_iyIegBojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_0FLJEBoiEe2YweHuT4XpSg" name="reclaim" incoming="_kIXRoBojEe2YweHuT4XpSg" outgoing="_tH6mkBojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_22DVQBoiEe2YweHuT4XpSg" name="Pick up" incoming="_jVRn0BojEe2YweHuT4XpSg" outgoing="_sLwgUBojEe2YweHuT4XpSg"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_5WLvsBoiEe2YweHuT4XpSg" name="Deliver" incoming="_W0x7sBojEe2YweHuT4XpSg" outgoing="_xkPn8BojEe2YweHuT4XpSg"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_KE694BojEe2YweHuT4XpSg" incoming="_yelwUBojEe2YweHuT4XpSg"/>
       <node xmi:type="uml:ForkNode" xmi:id="_SDL08BojEe2YweHuT4XpSg" incoming="_SDdhwBojEe2YweHuT4XpSg" outgoing="_W0x7sBojEe2YweHuT4XpSg _byXQABojEe2YweHuT4XpSg"/>
       <node xmi:type="uml:DecisionNode" xmi:id="_gMWIABojEe2YweHuT4XpSg" name=" " incoming="_iyIegBojEe2YweHuT4XpSg" outgoing="_jVRn0BojEe2YweHuT4XpSg _kIXRoBojEe2YweHuT4XpSg"/>
@@ -48,6 +50,29 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Artifact" xmi:id="_hxFM4B4jEe2-ccdznUHDMw" name="Artifact1"/>
     <packagedElement xmi:type="uml:Artifact" xmi:id="_iUT1wB4jEe2-ccdznUHDMw" name="Artifact2"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="__m_OsB9tEe2QUfQXsNCdxQ" name="fair exchange">
+      <packagedElement xmi:type="uml:Actor" xmi:id="_Db3OgB9uEe2QUfQXsNCdxQ" name="cutomers"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_GfqWsB9uEe2QUfQXsNCdxQ" name="business"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_KD1BAB9uEe2QUfQXsNCdxQ" name="buys goods"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_LnZskB9uEe2QUfQXsNCdxQ" name="sells good"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_P_2TgB9uEe2QUfQXsNCdxQ" memberEnd="_P_26kh9uEe2QUfQXsNCdxQ _P_26kx9uEe2QUfQXsNCdxQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_P_26kB9uEe2QUfQXsNCdxQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_P_26kR9uEe2QUfQXsNCdxQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_P_26kh9uEe2QUfQXsNCdxQ" name="business" type="_GfqWsB9uEe2QUfQXsNCdxQ" association="_P_2TgB9uEe2QUfQXsNCdxQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_P_26kx9uEe2QUfQXsNCdxQ" name="sells good" type="_LnZskB9uEe2QUfQXsNCdxQ" association="_P_2TgB9uEe2QUfQXsNCdxQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Q6QGQB9uEe2QUfQXsNCdxQ" memberEnd="_Q6QGQx9uEe2QUfQXsNCdxQ _Q6QtUB9uEe2QUfQXsNCdxQ">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q6QGQR9uEe2QUfQXsNCdxQ" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q6QGQh9uEe2QUfQXsNCdxQ" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Q6QGQx9uEe2QUfQXsNCdxQ" name="cutomers" type="_Db3OgB9uEe2QUfQXsNCdxQ" association="_Q6QGQB9uEe2QUfQXsNCdxQ"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_Q6QtUB9uEe2QUfQXsNCdxQ" name="buys goods" type="_KD1BAB9uEe2QUfQXsNCdxQ" association="_Q6QGQB9uEe2QUfQXsNCdxQ"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_BiYyIB9zEe2QUfQXsNCdxQ" name="Class12"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hA_HAB9zEe2QUfQXsNCdxQ" name="Class13"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_h_HjMB9zEe2QUfQXsNCdxQ" client="_hA_HAB9zEe2QUfQXsNCdxQ" supplier="_BiYyIB9zEe2QUfQXsNCdxQ"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_7URCcBohEe2YweHuT4XpSg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7URCcRohEe2YweHuT4XpSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.umlsec.de/profiles/UMLsec#/"/>
@@ -56,6 +81,9 @@
     </profileApplication>
   </uml:Model>
   <UMLsec:secrecy xmi:id="_bQ8tgBr-Ee2Kuenq1dEdWw" base_Dependency="_Y9KtABr-Ee2Kuenq1dEdWw"/>
-  <UMLsec:securelinks xmi:id="_c2LycB4eEe2-ccdznUHDMw" base_Package="_AH1UkBohEe2YweHuT4XpSg"/>
+  <UMLsec:securelinks xmi:id="_c2LycB4eEe2-ccdznUHDMw" adversary="default" base_Package="_AH1UkBohEe2YweHuT4XpSg"/>
   <UMLsec:Internet xmi:id="_-LV48B4hEe2-ccdznUHDMw" base_CommunicationPath="_2jk2UB4hEe2-ccdznUHDMw"/>
+  <UMLsec:fairexchange xmi:id="_UFNmYB9uEe2QUfQXsNCdxQ" start="_qddn8BoiEe2YweHuT4XpSg" stop="_0FLJEBoiEe2YweHuT4XpSg _22DVQBoiEe2YweHuT4XpSg" base_Package="__m_OsB9tEe2QUfQXsNCdxQ"/>
+  <UMLsec:critical xmi:id="_DcqtgB9zEe2QUfQXsNCdxQ" base_Class="_BiYyIB9zEe2QUfQXsNCdxQ" base_Classifier="_BiYyIB9zEe2QUfQXsNCdxQ"/>
+  <UMLsec:securedependency xmi:id="_9a2fkB9zEe2QUfQXsNCdxQ" base_Package="_AH1UkBohEe2YweHuT4XpSg"/>
 </xmi:XMI>
